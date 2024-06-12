@@ -1,30 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digiteasy</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pages/about.html">About</a></li>
-            <li><a href="pages/products.html">Products</a></li>
-            <li><a href="pages/subscription.html">Subscription</a></li>
-            <li><a href="pages/contact.html">Contact</a></li>
-            <li><a href="pages/login.html">Login</a></li>
-            <li><a href="pages/register.html">Register</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h1>Welcome to Digiteasy</h1>
-        <p>Your partner in digital transformation.</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 Digiteasy. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+    <div class="sidebar">
+        <div class="logo">
+            <h2>Digiteasy</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#unternehmen">Unternehmen</a></li>
+                <li><a href="#digitale-reife">Digitale Reife</a></li>
+                <li><a href="#auswertungen">Auswertungen</a></li>
+                <li><a href="#handlungsempfehlungen">Handlungsempfehlungen</a></li>
+                <li><a href="#ki-assistent">KI-Assistent</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <header>
+            <input type="text" placeholder="Suche">
+            <button>Button</button>
+            <div class="user-icon"></div>
+        </header>
+        <section id="unternehmen">
+            <h2>Unternehmen</h2>
+            <form>
+                <label for="firmenname">Firmenname</label>
+                <input type="text" id="firmenname" name="firmenname">
+                <label for="anzahl-mitarbeiter">Anzahl Mitarbeiter</label>
+                <input type="number" id="anzahl-mitarbeiter" name="anzahl-mitarbeiter">
+                <label for="jahresumsatz">Jahresumsatz (CHF)</label>
+                <input type="text" id="jahresumsatz" name="jahresumsatz">
+                <label for="branche">Branche</label>
+                <input type="text" id="branche" name="branche">
+                <label for="standort">Standort</label>
+                <input type="text" id="standort" name="standort">
+                <label for="kontaktperson">Kontaktperson</label>
+                <input type="text" id="kontaktperson" name="kontaktperson">
+                <label for="dokumente">Dokumente (IT-Strategie etc.)</label>
+                <input type="file" id="dokumente" name="dokumente">
+            </form>
+        </section>
+        <section id="digitale-reife">
+            <h2>Digitale Reife</h2>
+            <div class="assessment-erstellen">
+                <button>Assessment erstellen</button>
+                <select>
+                    <option value="standard">Standard</option>
+                    <option value="kurz">Kurz</option>
+                    <option value="individuell">Individuell</option>
+                </select>
+            </div>
+            <div class="assessment-list">
+                <div class="assessment">
+                    <p>Digitale Reife - 23.05.2024 (Individuell)</p>
+                    <button>Starten</button>
+                </div>
+                <div class="assessment">
+                    <p>Digitale Reife - 15.05.2024 (Kurz)</p>
+                    <button>Auswertung</button>
+                </div>
+                <div class="assessment">
+                    <p>Digitale Reife - 01.05.2024 (Standard)</p>
+                    <button>Auswertung</button>
+                </div>
+            </div>
+        </section>
+        <section id="auswertungen">
+            <h2>Auswertungen</h2>
+            <div class="auswertung-auswaehlen">
+                <label for="auswertung">Auswertung auswählen</label>
+                <select id="auswertung">
+                    <option value="1">1. Digitaler Reifegrad - 01.05.2024</option>
+                    <option value="2">2. Digitaler Reifegrad - 15.05.2024</option>
+                    <option value="3">3. Digitaler Reifegrad - 23.05.2024</option>
+                </select>
+            </div>
+            <div class="charts">
+                <img src="images/Auswertung.png" alt="Auswertung">
+            </div>
+        </section>
+    </div>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
